@@ -9,17 +9,32 @@
     <script src='main.js'></script>
 </head>
 <body>
-    
-    <button type="button" onclick="showPosition();">Current Position</button>
-    <div id="result">
-        <!--Position information will be inserted here-->
-    </div><br><br>
-    <form action="/action_page.php">
+    <div>
+        <div class="logo">
+            <img href="logo.jpg" src="Capture.JPG" width="50">
+            <div class="topnav">
+                <a href="">Home</a>
+                <a href="">Report an Issue</a>
+            </div>
+        </div>
 
-        <label for="file">Upload Image : </label>
-        <input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)">
-        <p><img id="output" width="200" /></p>
 
-    </form>
+        
+    </div>
+
+    <section>
+        <br><br>
+        <button type="button" onclick="showPosition()">Current Position</button>
+        <div id="result">
+            <!--Position information will be inserted here-->
+        </div><br><br>
+        <form action="/action_page.php">
+
+            <label for="file">Upload Image : </label>
+            <input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)">
+            <p><img id="output" width="200" /></p>
+
+        </form>
+    </section>
 </body>
 </html>
