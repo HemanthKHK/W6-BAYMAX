@@ -3,12 +3,13 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Municipal Corporation</title>
+    <title>MC | Report an Issue</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 </head>
 <body>
+
     <div>
         <div class="logo">
             <img href="logo.jpg" src="Capture.JPG" width="50">
@@ -21,31 +22,24 @@
     </div>
 
     <section>
-
+    
         <br>
-        <div style="text-align:center"> 
-            <button onclick="playPause()" style="margin-left: 60%; width: 15%;">Play/Pause</button> 
-            <br>
-            <video id="video1" width="75%" autoplay>
-              <source src="W6-BAYMAX.mp4" type="video/mp4">
-              <source src="mov_bbb.ogg" type="video/ogg">
-              Your browser does not support HTML video.
-            </video><br>
-            
-        </div> 
-          
-        <script> 
-            var myVideo = document.getElementById("video1"); 
-        </script> 
+        <button type="button" onclick="showPosition()">Current Position</button>
+        <div id="result">
+            <!--Position information will be inserted here-->
+        </div><br><br>
+        <form action="/action_page.php">
 
-        <br><br>
+            <label for="file">Upload Image : </label>
+            <input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)">
+            <p><img id="output" width="200" /></p>
+
+        </form>
     </section>
-
+    
     <div class="footer">
         <p>Copyrights 2021</p>
 
     </div>
-
-
 </body>
 </html>

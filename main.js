@@ -14,3 +14,11 @@ var loadFile = function(event) {
     var image = document.getElementById('output');
     image.src = URL.createObjectURL(event.target.files[0]);
 }
+
+var myVideo = document.getElementById("video1"); 
+function playPause() { 
+    if (myVideo.paused)
+        myVideo.play(); 
+    else 
+        myVideo.pause(); 
+} 
